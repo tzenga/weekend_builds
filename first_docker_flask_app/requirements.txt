@@ -1,6 +1,5 @@
 Flask==1.0.2
 SQLAlchemy
-redis
 
 graphene
 graphene-sqlalchemy
