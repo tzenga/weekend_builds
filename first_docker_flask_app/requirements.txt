@@ -6,3 +6,4 @@ graphene
 graphene-sqlalchemy
 flask-sqlalchemy
 
+flask-graphql

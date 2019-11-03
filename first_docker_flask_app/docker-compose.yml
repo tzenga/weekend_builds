@@ -5,7 +5,14 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DEBUG
+      - DEBUG=1
+      - ENV=development
+      - PORT=5000
    
-  redis:
-    image: "redis:alpine"
+  mysql:
+    image: mysql:latest
+    ports:
+      - 8083:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: pwd
+      MYSQL_DATABASE: mysql
